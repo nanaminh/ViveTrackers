@@ -47,8 +47,10 @@ namespace ViveTrackers
 		public float imuOnlyReliablePositionDuration = ImuOnlyMinDuration;
 		public DebugTransform debugTransform;
 
-		#region Properties
-		public ViveTrackerID ID { get; private set; }
+        
+
+        #region Properties
+        public ViveTrackerID ID { get; private set; }
 		
 		public bool Connected 
 		{ 
@@ -297,4 +299,6 @@ namespace ViveTrackers
 
 		#endregion
 	}
+
+    
 }

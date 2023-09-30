@@ -16,6 +16,7 @@
 * TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.							  *
 ******************************************************************************************************************************************************/
 
+using System.IO;
 using UnityEngine;
 
 public sealed class DebugTransform : MonoBehaviour
@@ -24,6 +25,7 @@ public sealed class DebugTransform : MonoBehaviour
 	private TextMesh _debugText;
 	[SerializeField]
 	private GameObject _debugModel;
+	
 
 	// Cached
 	private Transform _debugTextTransform = null;
@@ -51,6 +53,21 @@ public sealed class DebugTransform : MonoBehaviour
 		if (_billboardCameraTransform != null)
 		{
 			_debugTextTransform.rotation = _billboardCameraTransform.rotation;
+			/*float px = _debugTextTransform.transform.position.x;
+			float pz = _debugTextTransform.transform.position.z;
+			string txt = "x " + px.ToString() + ", z " + pz.ToString();
+
+			WritePosition(txt);
+			*/
 		}
 	}
+	/*
+	static void WritePosition(string text)
+	{
+		string path = "Assets/test.txt";
+		StreamWriter writer = new StreamWriter(path, true);
+		writer.WriteLine(text);
+		writer.Close();
+
+    }*/
 }

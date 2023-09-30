@@ -44,7 +44,7 @@ namespace ViveTrackers
 				_activeViveTrackersManager = viveTrackersManager;
 				viveTrackersManagerFake.gameObject.SetActive(false);
 			}
-			_activeViveTrackersManager.origin.Init("O", Color.white, _mainCameraTransform);
+			_activeViveTrackersManager.origin.Init("O", Color.white, _mainCameraTransform);	
 			_activeViveTrackersManager.TrackersFound += _OnTrackersFound;
 			_activeViveTrackersManager.RefreshTrackers();
 		}
