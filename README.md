@@ -25,5 +25,10 @@
 - You can access the last position/rotation of ViveTrackers using their transform.localPosition/localRotation.
 - You can also register to some [actions](Scripts/ViveTracker.cs#L190-L197) to know if the pogo-pins corresponding to Grip/Trigger/TouchPad/Menu buttons are pressed or released.
 
+
+
+---- Added by @nananinh -----
+- The script/Datalogger.cs can be used to log the tracker data and write it out to a text file.
+
 ## System requirements
 Unity ***2017.4.35f1*** and newer versions
